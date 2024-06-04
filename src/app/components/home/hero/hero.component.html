@@ -1,0 +1,34 @@
+<div class="hero-main" *ngIf="randomMeal">
+  <div class="upper">
+    <div class="image-container">
+      <img src="{{ randomMeal.strMealThumb }}" alt="meal image" />
+    </div>
+    <div class="meal-info">
+      <h2>{{ randomMeal.strMeal }}</h2>
+      <p><b>Category:</b> {{ randomMeal.strCategory }}</p>
+      <p><b>Area:</b> {{ randomMeal.strArea }}</p>
+      <h3>Instructions</h3>
+      <p>{{ randomMeal.strInstructions }}</p>
+      <a href="{{ randomMeal.strYoutube }}" target="_blank"
+        >Watch Recipe Video</a
+      >
+    </div>
+  </div>
+  <div class="lower">
+    <button (click)="showNewMeal()">New Meal</button>
+  </div>
+</div>
+
+<!-- <div class="hero-main" *ngif="randomMeal">
+  <div class="upper">
+    <div class="image-container">
+      <img src="" alt="mealImage" />
+    </div>
+    <div class="meal-info">
+      <p>meal info</p>
+    </div>
+  </div>
+  <div class="lower">
+    <button (click)="showNewMeal()">New Meal</button>
+  </div>
+</div> -->
